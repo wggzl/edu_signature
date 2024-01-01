@@ -18,5 +18,15 @@
         ]
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Edu\\Signature\\SignatureProvider"
+            ],
+            "aliases": {
+                "Signature": "Edu\\Signature\\Signature"
+            }
+        }
+    }
 }

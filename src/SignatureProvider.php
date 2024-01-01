@@ -13,7 +13,7 @@ class SignatureProvider extends ServiceProvider
         });
     }
 
-    public function booted(Closure $callback)
+    public function boot()
     {
         $this->publishes([
             __DIR__ . '/../config/edu.php' => config_path('edu.php')
