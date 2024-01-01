@@ -6,7 +6,6 @@ class User
 {
     public function say(): string
     {
-
-        return 'Hello world';
+        return config('edu.a');
     }
 }
