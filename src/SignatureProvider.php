@@ -20,8 +20,11 @@ class SignatureProvider extends ServiceProvider
 
     public function boot()
     {
+        //生成配置文件，php artisan vendor:publish
         $this->publishes([
             __DIR__ . '/../config/edu.php' => config_path('edu.php')
         ]);
+        //生成路由
+        $this->loadRoutesFrom(__DIR__ . '/../routes/api.php');
     }
 }
