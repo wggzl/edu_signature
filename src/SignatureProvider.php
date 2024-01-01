@@ -8,6 +8,11 @@ class SignatureProvider extends ServiceProvider
 {
     public function register()
     {
+        $this->mergeConfigFrom(
+            __DIR__ . '/../config/edu.php', 'edu'
+        );
+
+
         $this->app->bind('edu.signature', function () {
             return new User();
         });
