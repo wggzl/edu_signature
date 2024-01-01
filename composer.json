@@ -21,9 +21,12 @@
     "prefer-stable": true,
     "extra": {
         "laravel": {
-            "provider": [
+            "providers": [
                 "Edu\\Signature\\SignatureProvider"
-            ]
+            ],
+            "aliases": {
+                "Signature": "Edu\\Signature\\Signature"
+            }
         }
     }
 }
