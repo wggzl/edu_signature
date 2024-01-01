@@ -1,0 +1,29 @@
+{
+    "name": "edu/signature",
+    "description": "api signature",
+    "keywords": [
+        "api",
+        "auth",
+        "signature"
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Edu\\Signature\\": "src"
+        },
+        "classmap": [
+            "database/seeders"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "provider": [
+                "Edu\\Signature\\SignatureProvider"
+            ]
+        }
+    }
+}
